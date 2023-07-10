@@ -4,7 +4,6 @@ using PdfSharp.Pdf;
 using SkiaSharp;
 using SKSvg = SkiaSharp.Extended.Svg.SKSvg;
 
-PrintPDF();
 PrintSkia();
 
 //SkiaSharp
@@ -34,8 +33,9 @@ void PrintSkia()
         };
 
         var coord = new SKPoint(info.Width / 2, (info.Height + paint.TextSize) / 2);
-        canvas.DrawText("SkiaSharp", coord, paint);
-        canvas.DrawPicture(new SKSvg().Load("logo.svg"),coord);
+        canvas.DrawText("SkiaaSharp", coord, paint);
+        canvas.DrawPicture(new SKSvg().Load("BG.svg"), new SKPaint() { Style = SKPaintStyle.Stroke,StrokeWidth = 10 }) ;
+
         // save the file
         using (var image = surface.Snapshot())
         using (var data = image.Encode(SKEncodedImageFormat.Png, 100))
