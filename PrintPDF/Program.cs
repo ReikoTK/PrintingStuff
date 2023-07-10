@@ -1,6 +1,5 @@
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
-
 using SkiaSharp;
 using SKSvg = SkiaSharp.Extended.Svg.SKSvg;
 
@@ -10,41 +9,54 @@ PrintSkia();
 //Is bitmap, with SVG support
 void PrintSkia()
 {
-    //300dpi
-    var info = new SKImageInfo(2480, 3508);
-    //120dpi
-    info = new SKImageInfo(992,1403);
-    using (var surface = SKSurface.Create(info))
+    try
     {
-        // the the canvas and properties
-        var canvas = surface.Canvas; 
-
-        // make sure the canvas is blank
-        canvas.Clear(SKColors.White);
-
-        // draw some text
-        var paint = new SKPaint
+        //300dpi
+        var info = new SKImageInfo(2480, 3508);
+        //120dpi
+        info = new SKImageInfo(992, 1403);
+        using (var surface = SKSurface.Create(info))
         {
-            Color = SKColors.Black,
-            IsAntialias = true,
-            Style = SKPaintStyle.Fill,
-            TextAlign = SKTextAlign.Center,
-            TextSize = 24
-        };
+            // the the canvas and properties
+            var canvas = surface.Canvas;
 
-        var coord = new SKPoint(info.Width / 2, (info.Height + paint.TextSize) / 2);
-        canvas.DrawText("SkiaaSharp", coord, paint);
-        canvas.DrawPicture(new SKSvg().Load("BG.svg"), new SKPaint() { Style = SKPaintStyle.Stroke,StrokeWidth = 10 }) ;
+            // make sure the canvas is blank
+            canvas.Clear(SKColors.White);
 
-        // save the file
-        using (var image = surface.Snapshot())
-        using (var data = image.Encode(SKEncodedImageFormat.Png, 100))
-        using (var stream = File.OpenWrite("output.png"))
-        {
-            data.SaveTo(stream);
+            // draw some text
+            var paint = new SKPaint
+            {
+                Color = SKColors.Black,
+                IsAntialias = true,
+                Style = SKPaintStyle.Fill,
+                TextAlign = SKTextAlign.Center,
+                TextSize = 24,
+                Typeface = SKTypeface.FromFile("NotoSerifJP-Light.otf")
+            };
+            //Background SVG
+            canvas.DrawPicture(new SKSvg().Load("BG.svg"), paint);
+
+            //Draw text with coord
+            var coord = new SKPoint(info.Width / 2, (info.Height + paint.TextSize) / 2);
+            canvas.DrawText("日本語ぉぉぉぉおおABCabcアイウ", coord, paint);
+
+            // save the file
+            using (var image = surface.Snapshot())
+            using (var data = image.Encode(SKEncodedImageFormat.Png, 100))
+            using (var stream = File.OpenWrite("output.png"))
+            {
+                data.SaveTo(stream);
+            }
         }
     }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.ToString());
+        throw;
+    }
 }
+
+
 
 //PDFSharp
 //Is PDF, No SVG support
