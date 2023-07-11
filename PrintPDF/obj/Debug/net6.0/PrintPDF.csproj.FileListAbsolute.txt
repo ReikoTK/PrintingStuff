@@ -67,3 +67,4 @@ E:\PrintingStuff\PrintPDF\obj\Debug\net6.0\PrintPDF.pdb
 E:\PrintingStuff\PrintPDF\obj\Debug\net6.0\PrintPDF.genruntimeconfig.cache
 E:\PrintingStuff\PrintPDF\obj\Debug\net6.0\ref\PrintPDF.dll
 E:\PrintingStuff\PrintPDF\bin\Debug\net6.0\sample.json
+E:\Desktop\Visualiz\PrintPDF\PrintPDF\bin\Debug\net6.0\sample.json

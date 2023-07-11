@@ -1,5 +1,4 @@
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
+
 using SkiaSharp;
 using System.Numerics;
 using System.Text.Json;
@@ -87,7 +86,7 @@ internal class Program
 			{
 				var paintLeft = new SKPaint
 				{
-					Color = SKColors.RoyalBlue,
+					Color = SKColors.Black,
 					IsAntialias = true,
 					Style = SKPaintStyle.Fill,
 					TextAlign = SKTextAlign.Left,
@@ -96,7 +95,7 @@ internal class Program
 				};
 				var paintRight = new SKPaint
 				{
-					Color = SKColors.RoyalBlue,
+					Color = SKColors.Black,
 					IsAntialias = true,
 					Style = SKPaintStyle.Fill,
 					TextAlign = SKTextAlign.Right,
@@ -132,17 +131,17 @@ internal class Program
 						canvas.DrawText(thisitem.ProductName, new SKPoint(207, row2+VOffset), paintLeft);
 						canvas.DrawText(thisitem.Count.ToString(), new SKPoint(1339, row2+VOffset), paintRight);
 						canvas.DrawText(thisitem.Unit, new SKPoint(1414, row2+VOffset), paintLeft);
-						canvas.DrawText(thisitem.PricePer.ToString(), new SKPoint(1693, row2+VOffset), paintRight);
-						canvas.DrawText(thisitem.TotalPrice.ToString(), new SKPoint(2038, row2+VOffset), paintRight);
+						canvas.DrawText(String.Format("{0:#,0}",thisitem.PricePer), new SKPoint(1693, row2+VOffset), paintRight);
+						canvas.DrawText(String.Format("{0:#,0}",thisitem.TotalPrice), new SKPoint(2038, row2+VOffset), paintRight);
 						if (thisitem.Addition.Length >= 12)
 						{
 							canvas.DrawText(thisitem.Addition[..12], new SKPoint(2120, row1+VOffset), paintLeft);
 							canvas.DrawText(thisitem.Addition[^12..], new SKPoint(2120, row2+VOffset), paintLeft);
 						}
 					}
-					canvas.DrawText(item.NonTaxTotal.ToString(), new SKPoint(867, 1607+VOffset), paintRight);
-					canvas.DrawText(item.Tax.ToString(), new SKPoint(1427, 1607+VOffset), paintRight);
-					canvas.DrawText(item.Total.ToString(), new SKPoint(2080, 1627+VOffset), paintRight);
+					canvas.DrawText(String.Format("{0:#,0}", item.NonTaxTotal), new SKPoint(867, 1607+VOffset), paintRight);
+					canvas.DrawText(String.Format("{0:#,0}", item.Tax), new SKPoint(1427, 1607+VOffset), paintRight);
+					canvas.DrawText(String.Format("{0:#,0}", item.Total), new SKPoint(2080, 1627+VOffset), paintRight);
 					canvas.DrawText(item.Note, new SKPoint(384, 1645+VOffset), paintLeft);
 				}
 			}
