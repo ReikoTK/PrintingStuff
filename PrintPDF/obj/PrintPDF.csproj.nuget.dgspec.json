@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Desktop\\Visualiz\\PrintPDF\\PrintPDF\\PrintPDF.csproj": {}
+    "E:\\PrintingStuff\\PrintPDF\\PrintPDF.csproj": {}
   },
   "projects": {
-    "E:\\Desktop\\Visualiz\\PrintPDF\\PrintPDF\\PrintPDF.csproj": {
+    "E:\\PrintingStuff\\PrintPDF\\PrintPDF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\Visualiz\\PrintPDF\\PrintPDF\\PrintPDF.csproj",
+        "projectUniqueName": "E:\\PrintingStuff\\PrintPDF\\PrintPDF.csproj",
         "projectName": "PrintPDF",
-        "projectPath": "E:\\Desktop\\Visualiz\\PrintPDF\\PrintPDF\\PrintPDF.csproj",
-        "packagesPath": "C:\\Users\\ktam8\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\Visualiz\\PrintPDF\\PrintPDF\\obj\\",
+        "projectPath": "E:\\PrintingStuff\\PrintPDF\\PrintPDF.csproj",
+        "packagesPath": "C:\\Users\\visua\\.nuget\\packages\\",
+        "outputPath": "E:\\PrintingStuff\\PrintPDF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ktam8\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\visua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -81,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

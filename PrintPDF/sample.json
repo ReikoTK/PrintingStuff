@@ -1,0 +1,97 @@
+{
+  "CustomerNumber": "S3085-3000",
+  "TicketNumber": "300050",
+  "Date": "2023/6/1",
+  "Address": "732-0811 広島県広島市南区段原2-5-1",
+  "CustomerName": "株式会社　スペースエイジ　御中",
+  "Telephone": "082-275-5607",
+  "FAX": "082-275-5608",
+  "Manager": "琴浦工場　川田",
+  "NonTaxTotal": 13200,
+  "Tax": 1320,
+  "Total": 14520,
+  "Note": "☆*: .｡. o(≧▽≦)o .｡.:*☆☆*: .｡. o(≧▽≦)o .｡.:*☆☆*: .｡. o(≧▽≦)o .｡.:*☆",
+  "Products": [
+    {
+      "Code": "3070-4",
+      "ProductName": "DTFプリント　K-1Tシャツ",
+      "Count": 20,
+      "Unit": "枚",
+      "PricePer": 560,
+      "TotalPrice": 11200,
+      "Addition": "10E2305026-1"
+    },
+    {
+      "Code": "3070-4",
+      "ProductName": "DTFプリント　K-1Tシャツ",
+      "Count": 20,
+      "Unit": "枚",
+      "PricePer": 560,
+      "TotalPrice": 11200,
+      "Addition": "10E2305026-1"
+    },
+    {
+      "Code": "3070-4",
+      "ProductName": "DTFプリント　K-1Tシャツ",
+      "Count": 20,
+      "Unit": "枚",
+      "PricePer": 560,
+      "TotalPrice": 11200,
+      "Addition": "10E2305026-1"
+    },
+    {
+      "Code": "3070-4",
+      "ProductName": "DTFプリント　K-1Tシャツsssssssssssssssssssssssssssss",
+      "Count": 2000,
+      "Unit": "",
+      "PricePer": 560,
+      "TotalPrice": 11200,
+      "Addition": "10E2305026-1234"
+    },
+    {
+      "Code": "3070-4",
+      "ProductName": "DTFプリント　K-1Tシャツ",
+      "Count": 20,
+      "Unit": "枚",
+      "PricePer": 560,
+      "TotalPrice": 11200,
+      "Addition": "10E2305026-1"
+    },
+    {
+      "Code": "3070-4",
+      "ProductName": "DTFプリント　K-1Tシャツ",
+      "Count": 20,
+      "Unit": "枚",
+      "PricePer": 560,
+      "TotalPrice": 11200,
+      "Addition": "10E2305026-1"
+    },
+    {
+      "Code": "3070-4",
+      "ProductName": "DTFプリント　K-1Tシャツ",
+      "Count": 20,
+      "Unit": "枚",
+      "PricePer": 560,
+      "TotalPrice": 11200,
+      "Addition": "10E2305026-1"
+    },
+    {
+      "Code": "3070-4",
+      "ProductName": "DTFプリント　K-1Tシャツ",
+      "Count": 20,
+      "Unit": "枚",
+      "PricePer": 560,
+      "TotalPrice": 11200,
+      "Addition": "10E2305026-1"
+    },
+    {
+      "Code": "3070-4",
+      "ProductName": "DTFプリント　K-1Tシャツ",
+      "Count": 20,
+      "Unit": "枚",
+      "PricePer": 560,
+      "TotalPrice": 11200,
+      "Addition": "10E2305026-1"
+    }
+  ]
+}
