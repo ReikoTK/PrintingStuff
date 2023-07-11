@@ -113,7 +113,7 @@ internal class Program
 					canvas.DrawText(time.Month.ToString(), new SKPoint(1765, 262+VOffset), paintRight);
 					canvas.DrawText(time.Day.ToString(), new SKPoint(1920, 262+VOffset), paintRight);
 					var ADrow1 = item.Address.Split(' ')[0];
-					var ADrow2 = item.Address.Split(" ")[1];
+					var ADrow2 = item.Address.Split(' ')[1];
 					canvas.DrawText(ADrow1, new SKPoint(364, 317+VOffset), paintLeft);
 					canvas.DrawText(ADrow2, new SKPoint(364, 362+VOffset), paintLeft);
 					canvas.DrawText(item.CustomerName, new SKPoint(364, 476+VOffset), paintLeft);
